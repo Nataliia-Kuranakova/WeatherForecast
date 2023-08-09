@@ -1,0 +1,89 @@
+.search-input-container {
+  position: relative;
+}
+
+.search-input-container img {
+  position:absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+}
+
+.input {
+  outline: 0;
+  font-size: 14px;
+
+  &-search {
+    border: 0;
+    border-radius: 5px;
+    background-color: $bg-color;
+    padding: 15px 15px 15px 40px;
+    width: 200px;
+
+    &:focus {
+      outline: 1px solid $outline-color;
+    }
+  }
+
+  &-date {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $modal-borders-color;
+    padding: 10px;
+    border-radius: 3px;
+    color: $modal-borders-color;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+
+    &:hover {
+      border: 1px solid $outline-color; 
+    }
+  } 
+}
+
+.filled-input-value {
+  color: #000;
+}
+
+.datepicker-toggle {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 19px;
+}
+
+.datepicker-toggle-button {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-image: url('../svg/app-icons/calendar.svg');
+  background-repeat: no-repeat;
+  width: 20px;
+}
+
+.datepicker-input {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 600px;
+  height: 35px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.datepicker-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
