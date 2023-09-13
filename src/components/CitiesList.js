@@ -13,8 +13,8 @@ const CitiesList = ({ onFetchWeather, searchTerm }) => {
     {
       name: 'Porto',
       img: 'https://www.guidesulysse.com/images/destinations/iStock-871640368.jpg',
-      start: '2023-09-10',
-      end: '2023-09-14',
+      start: '2023-12-10',
+      end: '2023-12-14',
       id: '45jk',
     },
   ]);
